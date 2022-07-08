@@ -1,13 +1,12 @@
 import React, {useState} from 'react';
-import NavTabs from './Nav';
+import Nav from './Nav';
 import About from './pages/About';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import Resume from './pages/Resume';
 
 function Portfolio() {
-
-    const [currentPage, handlePageChange] = useState('About');
+    const [currentPage, setCurrentPage] = useState('About');
     const renderPage = () => {
         switch (currentPage) {
             case 'Projects':
@@ -23,7 +22,7 @@ function Portfolio() {
 
     return (
         <div>
-            <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
+            <Nav currentPage={currentPage} setCurrentPage={setCurrentPage} />
             <div>{renderPage(currentPage)}</div>
         </div>
     );

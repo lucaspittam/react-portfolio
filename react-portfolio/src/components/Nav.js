@@ -1,16 +1,17 @@
 import React from 'react';
 
-function NavTabs(props) {
-    const tabs = ['About', 'Projects', 'Contact', 'Resume'];
+function Nav(props) {
+    const pages = ['About', 'Projects', 'Contact', 'Resume'];
 
     return (
         <ul className="nav-list">
-            {tabs.map(tab => (
-                <li className="list-item" key={tab}>
-                    <a href={'#' + tab.toLowerCase()}
-                        onClick={() => props.handlePageChange(tab)}
-                        className={props.currentPage === tab ? 'navActive' : 'nav-link'}>
-                        {tab}
+            {/*render item to Nav bar */}
+            {pages.map(page => (
+                <li className="list-item" key={page}>
+                    <a href={'#' + page.toLowerCase()}
+                        onClick={() => props.setCurrentPage(page)}
+                        className={props.currentPage === page ? 'navActive' : 'nav-link'}>
+                        {page}
                     </a>
                 </li>
             ))}
@@ -18,4 +19,4 @@ function NavTabs(props) {
     );
 }
 
-export default NavTabs;
+export default Nav;
