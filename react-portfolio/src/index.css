@@ -27,3 +27,19 @@ code {
 .navActive {
   color: rgb(22, 68, 40);
 }
+
+.ecommerce {
+  background-color: rgb(103, 125, 125);
+}
+
+.app1 {
+  background-color: rgb(61, 136, 116);
+}
+
+.app2 {
+  background-color: rgb(176, 132, 115);
+}
+
+.blog-site {
+  background-color: rgb(87, 120, 132);
+}
