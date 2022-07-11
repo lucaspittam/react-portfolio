@@ -1,11 +1,9 @@
 import React from 'react';
-import profilePic from "../../pics/profile.jpg";
 
 
 const About = () => (
     <section>
         <h2 className="section-header">Me</h2>
-        <img src={profilePic} alt="Joe Lawton" />
         <p>
         Full-stack developer with a passion for solving problems and a commitment to lifelong learning. Skills in Html,
         Javascript, React and with the unique skill set of using creativity and logic to solve comprehensive puzzles 
