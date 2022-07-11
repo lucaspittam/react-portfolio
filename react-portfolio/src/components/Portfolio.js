@@ -27,7 +27,7 @@ function Portfolio() {
                 <h1>Lucas Pittam </h1>
                 <Nav currentPage={currentPage} setCurrentPage={setCurrentPage} />
             </header>
-            <main className="wrapper">
+            <main className="content-wrapper">
                 {renderPage(currentPage)}
             </main>
         <Footer />
