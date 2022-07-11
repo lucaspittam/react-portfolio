@@ -32,22 +32,26 @@ const projects = [
     }
 ]
 const Projects = () => (
-    <div>
-        <h1>Projects</h1>
+    <section>
+    <h2 className="section-header">Projects</h2>
+        <div className="project-wrapper">
             {projects.map(project => (
-                <div className={project.style} key={project.name}> 
-                    <a href={project.liveURL} target="_blank" rel="noopener noreferrer">
-
-                        {project.name}
-                    </a>
-                    <a href={project.ghURL} target="_blank" rel="noopener noreferrer">
-                        GitHub Repo
-                    </a>
-                    <p>{project.tech}</p>
+                <div className={`${project.style} project-item`} key={project.name}> 
+                    <div className="project-header">
+                        <a href={project.liveURL} target="_blank" rel="noopener noreferrer" className="project-title">
+                            {project.name}
+                        </a>
+                        <a href={project.ghURL} target="_blank" rel="noopener noreferrer" className="project-github">
+                            GitHub
+                        </a>
+                    </div>
+                    <p className="project-tech">{project.tech}</p>
                 </div>
-                
+
             ))}
-    </div>
+        </div>
+
+</section>
 );
 
 export default Projects;

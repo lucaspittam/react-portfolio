@@ -34,7 +34,7 @@ const Contact = () => {
 
     return (
         <section>
-            <h1>Contact me</h1>
+            <h2 className="section-header">Contact me</h2>
             <form id="contact-form" onSubmit={handleSubmit}>
             <div>
                 <label htmlFor="name">Name:</label>
@@ -46,7 +46,7 @@ const Contact = () => {
             </div>
             <div>
                 <label htmlFor="message">Message:</label>
-                <textarea name="message" rows="5" defaultValue={message} onBlur={handleChange} />
+                <textarea name="message" rows="10" defaultValue={message} onBlur={handleChange} />
             </div>
             {errorMessage && (
                 <div>

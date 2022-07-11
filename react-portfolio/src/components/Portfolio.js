@@ -23,9 +23,13 @@ function Portfolio() {
 
     return (
         <div>
-        <h1>Lucas Pittam</h1>
-        <Nav currentPage={currentPage} setCurrentPage={setCurrentPage} />
-        <div>{renderPage(currentPage)}</div>
+        <header className="header">
+                <h1>Lucas Pittam </h1>
+                <Nav currentPage={currentPage} setCurrentPage={setCurrentPage} />
+            </header>
+            <main className="wrapper">
+                {renderPage(currentPage)}
+            </main>
         <Footer />
     </div>
     );
